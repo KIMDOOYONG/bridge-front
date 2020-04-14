@@ -1,18 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import withLayout from '../components/MyLayout'
+import Skill from '../components/skill'
 
 const Title = styled.h1`
   font-size: 50px;
   color: ${({ theme }) => theme.colors.primary};
 `
 
-const Index = () => {
+const Business = () => {
   return (
     <>
-      <Title>HOME</Title>
+      <Title>営業管理</Title>
+      <Skill />
     </>
   )
 }
 
-export default withLayout(Index)
+export default withLayout(Business)

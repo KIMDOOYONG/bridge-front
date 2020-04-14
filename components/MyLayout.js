@@ -1,17 +1,21 @@
+import Head from 'next/head'
+import styled from 'styled-components'
 import Header from './Header'
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD',
-}
+const Layout = styled.div`
+  margin: 10px;
+  padding: 10px;
+`
 
 const withLayout = (Page) => {
   return () => (
-    <div style={layoutStyle}>
+    <Layout>
+      <Head>
+        <title>BRIDGE</title>
+      </Head>
       <Header />
       <Page />
-    </div>
+    </Layout>
   )
 }
 
