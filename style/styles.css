@@ -1,0 +1,9 @@
+html,
+body,
+#__next {
+  height: 98%;
+}
+
+a {
+  text-decoration: none;
+}
